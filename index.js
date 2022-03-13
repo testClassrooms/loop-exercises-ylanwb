@@ -106,6 +106,14 @@ console.log(str1);
 // Example output:
 // “yes”
 
+let inputCheck = "You"
+
+if (inputCheck.includes("y")) {
+  console.log('yes')
+} else {
+  console.log('no')
+}
+
 // Exercise 7
 
 // Given a number n Calculate the factorial of the number
@@ -113,6 +121,10 @@ console.log(str1);
 // let n2 = 4; //  4 * 3 * 2 * 1 = 24
 // Example output:
 // 24
+
+let n3 = 10;
+console.log(1 * 2 * 3 * 4 * n3)
+// is this what i am supposed to do?
 
 //  Exercise 8
 
@@ -123,6 +135,13 @@ console.log(str1);
 // Bonus: Use a nested for loop to show the tables for every multiplier from
 // 1 to 10 (100 results total).
 
+let tableNumber = 5;
+
+for (let tableLoop = 0; tableLoop <= 10; tableLoop++) {
+  let tableAnswer = tableLoop * tableNumber;
+  console.log(`${tableNumber} * ${tableLoop} = ${tableAnswer}`);
+} 
+
 // Exercise 9
 
 // The Grade Assigner
@@ -130,3 +149,28 @@ console.log(str1);
 // by logging every value from 60 to 100: your log should show "For 88, you got a
 // B. For 89, you got a B. For 90, you got an A. For 91, you got an A.", etc.,
 // logging each grade point in the range.
+
+
+
+for (let gradeLoop = 60; gradeLoop <= 100; gradeLoop++) {
+  console.log(`for ${gradeLoop} you got an`);
+  if (gradeLoop > 89) {
+  console.log("A");
+} else if (gradeLoop === 100) {
+  console.log("A");
+} else if (gradeLoop > 79) {
+  console.log("B");
+} else if (gradeLoop === 80) {
+  console.log("B");
+} else if (gradeLoop > 69) {
+  console.log("C");
+} else if (gradeLoop === 70) {
+  console.log("C");
+} else if (gradeLoop > 59) {
+  console.log("D");
+} else if (gradeLoop === 60) {
+  console.log("D");
+} else if (gradeLoop < 60) {
+  console.log("F");
+}
+}
